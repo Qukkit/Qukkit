@@ -1,0 +1,42 @@
+name: Qukkit
+version: 1.3
+description: Easy management plugin for admins.
+author: Qukkit
+main: tk.qukkit.Qukkit
+prefix: (!) Qukkit: 
+commands:
+    qukkit:
+        description: Quick Qukkit review.
+        aliases: [qukk, qu, qukkitp, qukkitproject]
+        permissions: qukkit.main
+        permission-message: You don't have the right permission node.
+        usage: Usage: /<command>
+    mute:
+        description: Mute and unmute players
+        permissions: qukkit.mute
+        permission-message: You don't have the right permission node.
+        usage: Usage: /<command>
+    vanish:
+        description: Vanish and unvanish.
+        aliases: [van, vanishme, va]
+        permissions: qukkit.vanish
+        permission-message: You don't have the right permission node.
+        usage: Usage: /<command>
+    invsee:
+        description: Watch a player's inventory!
+        aliases: [is, inventorysee]
+        permission: qukkit.invsee
+        permission-message: You don't have the right permission node.
+        usage: Usage: /<command>
+permissions:
+    qukkit.*:
+        description: Allows you to use all of the Qukkit commands.
+    qukkit.vanish:
+        description: Allows you to vanish or unvanish yourself.
+    qukkit.mute:
+        description: Allows you to mute bad players.
+    qukkit.main:
+        description: Allows you to see the quich review.
+    qukkit.invsee:
+        description: Allows you to see a player's inventory.
+    
